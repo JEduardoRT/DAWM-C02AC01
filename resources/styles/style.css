@@ -5,6 +5,7 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: #93A6E9;
+    margin: 0;
 }
 h1 {
     color: white; 
@@ -19,6 +20,11 @@ h2 {
 p {
     text-align: justify; 
 }
+.navigable li {
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    border-color: #CFCDE5;
+}
 section h2 {
     border-bottom: 1px solid #729BD9;
 }
@@ -28,9 +34,6 @@ nav a {
     display: inline-block;
     color: white;
     background: transparent;
-    border-width: 2px 0 0 0;
-    border-style: solid;
-    border-color: #CFCDE5;
     padding: 0 1%;
 }
 ul {
@@ -42,7 +45,13 @@ i {
     font-size: 20pt; 
     padding-right: 2%;
 }
-ul.navigable > a:hover {
+table {
+    width: 100%;
+}
+th > p {
+    font-weight: bold;
+}
+ul.navigable li:hover {
     background-image: linear-gradient(rgba(98,139,201,100) 60%,rgba(255,255,255,0))
 }
 #retrato{
@@ -75,4 +84,7 @@ ul.navigable > a:hover {
 }
 .content > section, aside {
     margin: 4vh 3vw 0 3vw;
+}
+.nav-bars {
+    display: none;
 }
